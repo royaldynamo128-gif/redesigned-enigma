@@ -1,0 +1,13 @@
+@echo off
+echo Starting Radhe Video Conferencing App...
+echo.
+echo 1. Installing dependencies...
+npm install
+echo.
+echo 2. Building the app...
+npm run build
+echo.
+echo 3. Starting server...
+cd server
+npm install
+npm start
