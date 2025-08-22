@@ -1,25 +1,8 @@
-# Radhe - Video Conferencing App
+# Radhe Server
 
-Simple video conferencing app with React and Node.js.
+Simple video conferencing server with Socket.IO.
 
 ## Quick Start
-
-1. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-## Server
 
 ```bash
 cd server
@@ -27,10 +10,13 @@ npm install
 npm start
 ```
 
-## Features
+## API
 
-- Video/audio conferencing
-- Chat with stickers
-- PDF viewer
-- QR code sharing
-- Mobile responsive
+- `GET /api/health` - Server status
+- `POST /api/meetings` - Create meeting
+
+## Socket Events
+
+- `join-meeting` - Join video call
+- `offer/answer/ice-candidate` - WebRTC signaling
+- `chat-message` - Send chat message
